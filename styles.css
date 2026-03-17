@@ -1,0 +1,185 @@
+:root {
+  --primary-bg-color: linear-gradient(to bottom, #2860fa, #1109ff) !important;
+  --primary-text-border-color: #d1d1d1 !important;
+  --card-background: rgba(49, 49, 123, 0.95) !important;
+  --margin-top-bottom: 2rem !important;
+  --border-radius: 15px solid !important;
+  --border: 2px solid !important;
+  --min-height: 100vh !important;
+  --hover-color: #00d4ff !important;
+  --container-width: 600px !important;
+}
+
+/*  */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--primary-bg-color) !important;
+  background-attachment: fixed !important;
+  min-height: var(--min-height) !important;
+}
+
+/* Ensure html fills the entire viewport */
+html {
+  height: 100%;
+}
+
+/*  */
+.navbar {
+  background: var(--card-background) !important;
+  border-color: var(--primary-text-border-color) !important;
+  backdrop-filter: blur(10px);
+  color: var(--primary-text-border-color) !important;
+}
+
+/*  */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-text-border-color) !important;
+  transition: color 0.3s ease;
+}
+
+/*  */
+.navbar-brand:hover {
+  color: var(--hover-color) !important;
+}
+
+/*  */
+.nav-link {
+  color: var(--primary-text-border-color) !important;
+  transition: color 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+/*  */
+.nav-link:hover {
+  color: var(--hover-color) !important;
+}
+
+/*  */
+a:hover {
+  color: var(--hover-color) !important;
+}
+
+/*  */
+.navbar-toggler {
+  border-color: var(--primary-text-border-color) !important;
+}
+
+/*  */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a0a0d0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/*  */
+.container {
+  color: var(--primary-text-border-color) !important;
+  border-radius: var(--border-radius) !important;
+  border: var(--border) !important;
+  border-color: var(--primary-text-border-color) !important;
+  background: var(--card-background) !important;
+  max-width: var(--container-width) !important;
+  margin: var(--margin-top-bottom) auto !important;
+  padding: 0 0 !important;
+  text-align: center;
+}
+
+/*  */
+/*
+.card {
+  border-radius: var(--border-radius) !important;
+  background: var(--card-background) !important;
+  border: var(--primary-text-border-color) solid !important;
+  color: var(--primary-text-border-color) !important;
+  margin: var(--margin-top-bottom) auto !important;
+  width: var(--container-width) !important;
+  text-align: center;
+}
+*/
+
+/*  */
+.card-header {
+  background: var(--card-background) !important;
+  border-bottom: var(--primary-text-border-color) solid !important;
+  margin: 0 0 0 0 !important;
+  color: var(--primary-text-border-color) !important;
+  padding: 1rem 2.5rem 1rem 2.5rem !important;
+  /* width: 100%;
+  text-align: center;
+  border-end-end-radius: 1rem !important; */
+}
+
+.card-body {
+  background: var(--card-background) !important;
+  color: var(--primary-text-border-color) !important;
+  text-align: left;
+  padding: 1rem 2.5rem 1rem 2.5rem !important;
+}
+
+/*  */
+.figure_caption {
+  color: var(--primary-text-color) !important;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/*  */
+figcaption {
+  color: var(--primary-text-color) !important;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/*  */
+figure {
+  color: var(--primary-text-color) !important;
+  margin: 1rem 0;
+}
+
+/*  */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--primary-text-border-color) !important;
+}
+
+/*  */
+p {
+  color: var(--primary-text-border-color) !important;
+  line-height: 1.6;
+}
+
+/*  */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/*  */
+@media (min-width: 769px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
