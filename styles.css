@@ -1,18 +1,32 @@
+/* Constants */
 :root {
-  --primary-bg-color: linear-gradient(to bottom, #2860fa, #1109ff) !important;
-  --primary-text-border-color: #d1d1d1 !important;
+  /* background gradient colors */
+  --primary-bg-color: linear-gradient(to bottom, #2860fa, #1109ff);
+  /* text color */
+  --primary-text-color: #d1d1d1;
+  /* border color */
+  --primary-border-color: #9292c1;
+  /* card backgrounds */
   --card-background: rgba(49, 49, 123, 0.95) !important;
+  /* top and bottom margins */
   --margin-top-bottom: 2rem !important;
+  /* border radius */
   --border-radius: 15px solid !important;
+  /* border size */
   --border: 2px solid !important;
+  /* min height set to 100% viewport */
   --min-height: 100vh !important;
+  /* hover color */
   --hover-color: #00d4ff !important;
+  /* container with */
   --container-width: 600px !important;
 }
 
-/*  */
+/* body specific attributes */
 body {
+  /* fonts */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* example of using variables for colors */
   background: var(--primary-bg-color) !important;
   background-attachment: fixed !important;
   min-height: var(--min-height) !important;
@@ -23,60 +37,60 @@ html {
   height: 100%;
 }
 
-/*  */
+/* navbar customization */
 .navbar {
   background: var(--card-background) !important;
-  border-color: var(--primary-text-border-color) !important;
+  border-color: var(--primary-border-color) !important;
   backdrop-filter: blur(10px);
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
 }
 
-/*  */
+/* Shows my name above every page */
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text--color) !important;
   transition: color 0.3s ease;
 }
 
-/*  */
+/* Navbar brand hover color */
 .navbar-brand:hover {
   color: var(--hover-color) !important;
 }
 
-/*  */
+/* navbar link color, transition, and margin on the left */
 .nav-link {
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
   transition: color 0.3s ease;
   margin-left: 0.5rem;
 }
 
-/*  */
+/* nav-link hover color */
 .nav-link:hover {
   color: var(--hover-color) !important;
 }
 
-/*  */
+/* Hover color when over a link in general */
 a:hover {
   color: var(--hover-color) !important;
 }
 
-/*  */
+/* navbar toggle color */
 .navbar-toggler {
-  border-color: var(--primary-text-border-color) !important;
+  border-color: var(--primary-border-color) !important;
 }
 
-/*  */
+/* navbar toggle icon */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a0a0d0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a0a0d0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/*  */
+/* General container attributes for everything */
 .container {
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
   border-radius: var(--border-radius) !important;
   border: var(--border) !important;
-  border-color: var(--primary-text-border-color) !important;
+  border-color: var(--primary-border-color) !important;
   background: var(--card-background) !important;
   max-width: var(--container-width) !important;
   margin: var(--margin-top-bottom) auto !important;
@@ -84,75 +98,63 @@ a:hover {
   text-align: center;
 }
 
-/*  */
-/*
-.card {
-  border-radius: var(--border-radius) !important;
-  background: var(--card-background) !important;
-  border: var(--primary-text-border-color) solid !important;
-  color: var(--primary-text-border-color) !important;
-  margin: var(--margin-top-bottom) auto !important;
-  width: var(--container-width) !important;
-  text-align: center;
-}
-*/
-
-/*  */
+/* Header specific attributes */
 .card-header {
   background: var(--card-background) !important;
-  border-bottom: var(--primary-text-border-color) solid !important;
+  border-bottom: var(--primary-border-color) solid !important;
   margin: 0 0 0 0 !important;
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
   padding: 1rem 2.5rem 1rem 2.5rem !important;
   /* width: 100%;
   text-align: center;
   border-end-end-radius: 1rem !important; */
 }
 
+/* Card body (text) specific attributes */
 .card-body {
   background: var(--card-background) !important;
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
   text-align: left;
   padding: 1rem 2.5rem 1rem 2.5rem !important;
 }
 
-/*  */
+/* Figure caption attributes */
 .figure_caption {
   color: var(--primary-text-color) !important;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
-/*  */
+/* Alternate caption for accessibility */
 figcaption {
   color: var(--primary-text-color) !important;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
-/*  */
+/* Also helps with accessibility */
 figure {
   color: var(--primary-text-color) !important;
   margin: 1rem 0;
 }
 
-/*  */
+/* Heading specific attributes */
 h1,
 h2,
 h3,
 h4 {
   font-weight: 600;
   letter-spacing: -0.5px;
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
 }
 
-/*  */
+/* Paragraph specific attributes */
 p {
-  color: var(--primary-text-border-color) !important;
+  color: var(--primary-text-color) !important;
   line-height: 1.6;
 }
 
-/*  */
+/* Attributes specific to screens smaller than 769px (phone/laptop) */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.75rem;
@@ -168,7 +170,7 @@ p {
   }
 }
 
-/*  */
+/* Attributes specific to screens larger than 768px (desktop) */
 @media (min-width: 769px) {
   h1 {
     font-size: 2.5rem;
@@ -182,4 +184,271 @@ p {
   p {
     font-size: 1rem;
   }
+}
+
+/* Active navigation link indicator attributes*/
+.nav-link.active {
+  color: var(--hover-color) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--hover-color) !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* Footer attributes */
+.footer {
+  background: var(--card-background) !important;
+  border-top: var(--border) var(--primary-border-color) !important;
+  color: var(--primary-text-color) !important;
+  margin-top: 4rem;
+  padding: 2rem 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Footer header 5 attributes */
+.footer h5 {
+  color: var(--hover-color) !important;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Attributes for links inside footer */
+.footer a {
+  color: var(--primary-text-color) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover color for links inside footer */
+.footer a:hover {
+  color: var(--hover-color) !important;
+}
+
+/* Specific attributes for footer content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Attributes for social links */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Attributes for social links */
+.social-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-border-color) !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover color for social links */
+.social-links a:hover {
+  border-color: var(--hover-color) !important;
+  background: rgba(0, 212, 255, 0.1);
+}
+
+/* Scroll-to-top button attributes*/
+#scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--card-background) !important;
+  color: var(--hover-color) !important;
+  border: 2px solid var(--primary-border-color) !important;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 999;
+  font-weight: bold;
+}
+
+/* Scroll-to-top button hover attributes */
+#scroll-to-top:hover {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: #fff !important;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Smooth animations */
+main {
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* annimation attributes for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container animations on scroll */
+.container {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* annimation attributes for sliding up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improve link accessibility */
+a {
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+/* Shows visible indicator when a link is navigated to using
+the keyboard and not the mouse */
+a:focus-visible {
+  outline: 2px solid var(--hover-color) !important;
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+/* Image hover attributes */
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Form styling (for contact page) */
+.form-control,
+.form-select,
+textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--primary-border-color) !important;
+  color: var(--primary-text-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* Attributes for form inputes */
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--hover-color) !important;
+  color: var(--primary-text-color) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+}
+
+/* Attributes for form placeholders */
+.form-control::placeholder,
+textarea::placeholder {
+  color: rgba(209, 209, 209, 0.5) !important;
+}
+
+/* Attributes for form labels */
+.form-label {
+  color: var(--primary-text-color) !important;
+  font-weight: 500;
+}
+
+/* Button attributes */
+.btn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Adds color to the button */
+.btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #0090ff) !important;
+  border: none !important;
+}
+
+/* Adds hover color to the button */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Improved spacing for main content */
+main {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make footer stick to bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+
+/* Attributes for everything in the body besides main */
+body > *:not(main) {
+  flex-shrink: 0;
+}
+
+/* Puts the footer at the bottom of the page */
+.footer {
+  margin-top: auto;
+}
+
+/* Shared attributes for form textareas */
+.form-control,
+.form-select,
+textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--primary-border-color) !important;
+  color: var(--primary-text-color) !important;
+}
+
+/* Shared attributes for when form textareas are in focus */
+.form-control:focus,
+textarea:focus {
+  border-color: var(--hover-color) !important;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Attributes for the form label */
+.form-label {
+  color: var(--primary-text-color) !important;
+  font-weight: 500;
+}
+
+/* Attributes for invalid feedback message */
+.invalid-feedback {
+  color: #ff6b6b !important;
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Is valid color */
+.is-valid {
+  border-color: #51cf66 !important;
+}
+
+/* Not valid color */
+.is-invalid {
+  border-color: #ff6b6b !important;
 }
