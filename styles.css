@@ -7,19 +7,19 @@
   /* border color */
   --primary-border-color: #9292c1;
   /* card backgrounds */
-  --card-background: rgba(49, 49, 123, 0.95) !important;
+  --card-background: rgba(49, 49, 123, 0.95);
   /* top and bottom margins */
-  --margin-top-bottom: 2rem !important;
+  --margin-top-bottom: 2rem;
   /* border radius */
-  --border-radius: 15px solid !important;
+  --border-radius: 4px;
   /* border size */
-  --border: 2px solid !important;
+  --border: 2px solid;
   /* min height set to 100% viewport */
-  --min-height: 100vh !important;
+  --min-height: 100vh;
   /* hover color */
-  --hover-color: #00d4ff !important;
+  --hover-color: #00d4ff;
   /* container with */
-  --container-width: 600px !important;
+  --container-width: 600px;
 }
 
 /* body specific attributes */
@@ -27,9 +27,9 @@ body {
   /* fonts */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* example of using variables for colors */
-  background: var(--primary-bg-color) !important;
-  background-attachment: fixed !important;
-  min-height: var(--min-height) !important;
+  background: var(--primary-bg-color);
+  background-attachment: fixed;
+  min-height: var(--min-height);
 }
 
 /* Ensure html fills the entire viewport */
@@ -39,45 +39,45 @@ html {
 
 /* navbar customization */
 .navbar {
-  background: var(--card-background) !important;
-  border-color: var(--primary-border-color) !important;
+  background: var(--card-background);
+  border-color: var(--primary-border-color);
   backdrop-filter: blur(10px);
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
 }
 
 /* Shows my name above every page */
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--primary-text--color) !important;
+  color: var(--primary-text-color);
   transition: color 0.3s ease;
 }
 
 /* Navbar brand hover color */
 .navbar-brand:hover {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
 }
 
 /* navbar link color, transition, and margin on the left */
 .nav-link {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   transition: color 0.3s ease;
   margin-left: 0.5rem;
 }
 
 /* nav-link hover color */
 .nav-link:hover {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
 }
 
 /* Hover color when over a link in general */
 a:hover {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
 }
 
 /* navbar toggle color */
 .navbar-toggler {
-  border-color: var(--primary-border-color) !important;
+  border-color: var(--primary-border-color);
 }
 
 /* navbar toggle icon */
@@ -87,54 +87,51 @@ a:hover {
 
 /* General container attributes for everything */
 .container {
-  color: var(--primary-text-color) !important;
-  border-radius: var(--border-radius) !important;
-  border: var(--border) !important;
-  border-color: var(--primary-border-color) !important;
-  background: var(--card-background) !important;
-  max-width: var(--container-width) !important;
-  margin: var(--margin-top-bottom) auto !important;
-  padding: 0 0 !important;
+  color: var(--primary-text-color);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  border-color: var(--primary-border-color);
+  background: var(--card-background);
+  max-width: var(--container-width);
+  margin: var(--margin-top-bottom) auto;
+  padding: 0 0;
   text-align: center;
 }
 
 /* Header specific attributes */
 .card-header {
-  background: var(--card-background) !important;
-  border-bottom: var(--primary-border-color) solid !important;
-  margin: 0 0 0 0 !important;
-  color: var(--primary-text-color) !important;
-  padding: 1rem 2.5rem 1rem 2.5rem !important;
-  /* width: 100%;
-  text-align: center;
-  border-end-end-radius: 1rem !important; */
+  background: var(--card-background);
+  border-bottom: var(--primary-border-color) solid;
+  margin: 0 0 0 0;
+  color: var(--primary-text-color);
+  padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
 /* Card body (text) specific attributes */
 .card-body {
-  background: var(--card-background) !important;
-  color: var(--primary-text-color) !important;
+  background: var(--card-background);
+  color: var(--primary-text-color);
   text-align: left;
-  padding: 1rem 2.5rem 1rem 2.5rem !important;
+  padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
 /* Figure caption attributes */
 .figure_caption {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
 /* Alternate caption for accessibility */
 figcaption {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
 /* Also helps with accessibility */
 figure {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   margin: 1rem 0;
 }
 
@@ -145,12 +142,12 @@ h3,
 h4 {
   font-weight: 600;
   letter-spacing: -0.5px;
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
 }
 
 /* Paragraph specific attributes */
 p {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   line-height: 1.6;
 }
 
@@ -188,17 +185,17 @@ p {
 
 /* Active navigation link indicator attributes*/
 .nav-link.active {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
   font-weight: 600;
   border-bottom: 2px solid var(--hover-color) !important;
-  padding-bottom: 0.25rem !important;
+  padding-bottom: 0.25rem;
 }
 
 /* Footer attributes */
 .footer {
-  background: var(--card-background) !important;
-  border-top: var(--border) var(--primary-border-color) !important;
-  color: var(--primary-text-color) !important;
+  background: var(--card-background);
+  border-top: var(--border) var(--primary-border-color);
+  color: var(--primary-text-color);
   margin-top: 4rem;
   padding: 2rem 0;
   backdrop-filter: blur(10px);
@@ -206,21 +203,21 @@ p {
 
 /* Footer header 5 attributes */
 .footer h5 {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
 /* Attributes for links inside footer */
 .footer a {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 /* Hover color for links inside footer */
 .footer a:hover {
-  color: var(--hover-color) !important;
+  color: var(--hover-color);
 }
 
 /* Specific attributes for footer content */
@@ -241,14 +238,14 @@ p {
 .social-links a {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--primary-border-color) !important;
+  border: 1px solid var(--primary-border-color);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 /* Hover color for social links */
 .social-links a:hover {
-  border-color: var(--hover-color) !important;
+  border-color: var(--hover-color);
   background: rgba(0, 212, 255, 0.1);
 }
 
@@ -259,9 +256,9 @@ p {
   right: 2rem;
   width: 3rem;
   height: 3rem;
-  background: var(--card-background) !important;
-  color: var(--hover-color) !important;
-  border: 2px solid var(--primary-border-color) !important;
+  background: var(--card-background);
+  color: var(--hover-color);
+  border: 2px solid var(--primary-border-color);
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
@@ -275,8 +272,8 @@ p {
 
 /* Scroll-to-top button hover attributes */
 #scroll-to-top:hover {
-  background: rgba(0, 212, 255, 0.1) !important;
-  color: #fff !important;
+  background: rgba(0, 212, 255, 0.1);
+  color: #fff;
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
 }
@@ -324,7 +321,7 @@ a {
 /* Shows visible indicator when a link is navigated to using
 the keyboard and not the mouse */
 a:focus-visible {
-  outline: 2px solid var(--hover-color) !important;
+  outline: 2px solid var(--hover-color);
 }
 
 /* Image responsiveness */
@@ -342,9 +339,9 @@ img:hover {
 .form-control,
 .form-select,
 textarea {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: var(--primary-border-color) !important;
-  color: var(--primary-text-color) !important;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary-border-color);
+  color: var(--primary-text-color);
   transition: all 0.3s ease;
 }
 
@@ -352,21 +349,21 @@ textarea {
 .form-control:focus,
 .form-select:focus,
 textarea:focus {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-color: var(--hover-color) !important;
-  color: var(--primary-text-color) !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--hover-color);
+  color: var(--primary-text-color);
   box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
 }
 
 /* Attributes for form placeholders */
 .form-control::placeholder,
 textarea::placeholder {
-  color: rgba(209, 209, 209, 0.5) !important;
+  color: rgba(209, 209, 209, 0.5);
 }
 
 /* Attributes for form labels */
 .form-label {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   font-weight: 500;
 }
 
@@ -378,8 +375,8 @@ textarea::placeholder {
 
 /* Adds color to the button */
 .btn-primary {
-  background: linear-gradient(135deg, #00d4ff, #0090ff) !important;
-  border: none !important;
+  background: linear-gradient(135deg, #00d4ff, #0090ff);
+  border: none;
 }
 
 /* Adds hover color to the button */
@@ -400,7 +397,7 @@ main {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh !important;
+  min-height: 100vh;
 }
 
 /* Attributes for everything in the body besides main */
@@ -413,31 +410,22 @@ body > *:not(main) {
   margin-top: auto;
 }
 
-/* Shared attributes for form textareas */
-.form-control,
-.form-select,
-textarea {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: var(--primary-border-color) !important;
-  color: var(--primary-text-color) !important;
-}
-
 /* Shared attributes for when form textareas are in focus */
 .form-control:focus,
 textarea:focus {
-  border-color: var(--hover-color) !important;
+  border-color: var(--hover-color);
   box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
 /* Attributes for the form label */
 .form-label {
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   font-weight: 500;
 }
 
 /* Attributes for invalid feedback message */
 .invalid-feedback {
-  color: #ff6b6b !important;
+  color: #ff6b6b;
   display: block;
   margin-top: 0.25rem;
   font-size: 0.875rem;
@@ -445,10 +433,10 @@ textarea:focus {
 
 /* Is valid color */
 .is-valid {
-  border-color: #51cf66 !important;
+  border-color: #51cf66;
 }
 
 /* Not valid color */
 .is-invalid {
-  border-color: #ff6b6b !important;
+  border-color: #ff6b6b;
 }

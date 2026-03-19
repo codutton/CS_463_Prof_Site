@@ -5,7 +5,7 @@
 const siteConfig = {
   siteName: 'Cory Dutton',
   pages: [
-    { name: 'Home', href: 'main.html', id: 'nav-home' },
+    { name: 'Home', href: 'index.html', id: 'nav-home' },
     { name: 'Projects', href: 'projects.html', id: 'nav-projects' },
     { name: 'Previous Work', href: 'prev_work.html', id: 'nav-prevwork' },
     { name: 'Contacts', href: 'contact.html', id: 'nav-contacts' },
@@ -25,7 +25,7 @@ function loadNavbar() {
   const navHTML = `
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="main.html">${siteConfig.siteName}</a>
+        <a class="navbar-brand" href="index.html">${siteConfig.siteName}</a>
 
         <button
           class="navbar-toggler"
@@ -111,7 +111,7 @@ function setActiveNavLink() {
   // Getting the file path and splitting it to get the the file name.
   // split('/') splits the path into an array of parts.
   // pop() gets the file name from the array (the last element).
-  const currentPage = window.location.pathname.split('/').pop() || 'main.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   // querySelectorAll finds multiple instances of data-page and returns a list of elements.
   // Each link has data-page so they can be found with that.
   const navLinks = document.querySelectorAll('[data-page]');
@@ -121,8 +121,8 @@ function setActiveNavLink() {
     // If it matches, we add the 'active' class and set aria-current to 'page' for accessibility.
     const href = link.getAttribute('href');
     // href === currentPage means "does the link's href match the current page?"
-    // currentPage === '' && href === 'main.html' means "if we're on the root URL, treat it as main.html"
-    if (href === currentPage || (currentPage === '' && href === 'main.html')) {
+    // currentPage === '' && href === 'index.html' means "if we're on the root URL, treat it as index.html"
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       link.classList.add('active');
       link.setAttribute('aria-current', 'page');
     } else {
@@ -164,8 +164,8 @@ function initScrollTopButton() {
 function setPageTitle() {
   // split pulls the slash and puts each path name into an array.
   // pop gets the last element of the array.
-  // Then if empty, fall back to 'main.html' for the homepage.
-  const currentPage = window.location.pathname.split('/').pop() || 'main.html';
+  // Then if empty, fall back to 'index.html' for the homepage.
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
   // Find the page name from siteConfig based on the current page's href.
   // If it finds a match, it uses that page's name.
